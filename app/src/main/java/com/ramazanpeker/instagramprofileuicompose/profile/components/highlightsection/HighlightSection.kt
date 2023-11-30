@@ -12,12 +12,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.ramazanpeker.instagramprofileuicompose.profile.components.ImageWithTextModel
 import com.ramazanpeker.instagramprofileuicompose.profile.components.RoundImage
 
 @Composable
 fun HighlightSection(
     modifier: Modifier = Modifier,
-    highlightModel: List<StoryHighlightModel>
+    highlightModel: List<ImageWithTextModel>
 ) {
     LazyRow(modifier = modifier) {
         items(highlightModel.size) {
